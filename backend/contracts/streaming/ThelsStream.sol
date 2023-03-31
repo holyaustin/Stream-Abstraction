@@ -15,7 +15,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 
-contract ThelsStream is Ownable {
+contract SAStream is Ownable {
     using CFAv1Library for CFAv1Library.InitData;
     using SafeMath for uint256;
 

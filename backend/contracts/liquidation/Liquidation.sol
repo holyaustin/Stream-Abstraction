@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperToken.sol";
 import "@chainlink/contracts/src/v0.7/interfaces/AggregatorV3Interface.sol";
 
-contract ThelsLiquidation {
+contract Liquidation {
     ISuperToken public USDCxToken;
     struct Token {
         address tokenAddress;

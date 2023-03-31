@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import HeroSection from '../components/HeroSection'
 import Container from '../components/Container'
+import Authkit from '../components/Authkit'
 import Navbar from '../components/Navbar'
 import { useMoralis } from 'react-moralis';
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Container>
 
           <HeroSection />
+          <Authkit />
 
         </Container>
       </main>

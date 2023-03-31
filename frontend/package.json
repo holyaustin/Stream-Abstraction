@@ -10,8 +10,13 @@
   "dependencies": {
     "@headlessui/react": "^1.4.3",
     "@heroicons/react": "^1.0.5",
+    "@mui/material": "^5.11.15",
     "@openzeppelin/contracts": "^4.4.2",
+    "@safe-global/auth-kit": "^0.1.0-alpha.2",
     "@walletconnect/web3-provider": "^1.7.1",
+    "@web3auth/base": "^5.1.0",
+    "@web3auth/modal": "^5.1.1",
+    "@web3auth/openlogin-adapter": "^5.1.1",
     "magic-sdk": "^8.0.1",
     "next": "12.0.10",
     "react": "17.0.2",

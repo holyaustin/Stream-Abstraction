@@ -9,7 +9,7 @@ import "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/I
 import "@chainlink/contracts/src/v0.7/interfaces/AggregatorV3Interface.sol";
 import "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol";
 
-contract Thels is Ownable {
+contract StreamAbsraction is Ownable {
     using CFAv1Library for CFAv1Library.InitData;
 
     struct Token {
