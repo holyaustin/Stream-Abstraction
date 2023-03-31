@@ -1,0 +1,36 @@
+dependencies:
+ - OpenZeppelin/openzeppelin-contracts@3.4.2-solc-0.7
+ - smartcontractkit/chainlink-brownie-contracts@0.3.1
+ - altugbakan/superfluid-brownie-contracts@1.0.0-rc.11
+ - Uniswap/v3-periphery@1.3.0
+ - Uniswap/v3-core@1.0.0
+compiler:
+  solc:
+    remappings:
+     - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.2-solc-0.7'
+     - '@chainlink=smartcontractkit/chainlink-brownie-contracts@0.3.1'
+     - '@superfluid-finance/ethereum-contracts=altugbakan/superfluid-brownie-contracts@1.0.0-rc.11'
+     - '@uniswap/v3-periphery=Uniswap/v3-periphery@1.3.0'
+     - '@uniswap/v3-core=Uniswap/v3-core@1.0.0'
+dotenv: .env
+wallets:
+  from_key: ${PRIVATE_KEY}
+networks:
+  development:  
+    usdc_token: '0x0000000000000000000000000000000000000000'
+  polygon-test:
+    uni_token: '0xe44FCEA92aDe7950e1b5FbEbb2647210Cd0F79f2'
+    usdc_token: '0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2'
+    usdcx_token: '0x42bb40bF79730451B11f6De1CbA222F17b87Afd7'
+    superfluid_host: '0xEB796bdb90fFA0f28255275e16936D25d3418603'
+    uni_usd_price_feed: '0xEb3F14F6D3d8f541bA597dBB92A5bFF284a05D45'
+    uniswap_router: '0xE592427A0AEce92De3Edee1F18E0157C05861564'
+    verify: False
+  polygon-main:
+    uni_token: '0xb33eaad8d922b1083446dc23f610c2567fb5180f'
+    usdc_token: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
+    usdcx_token: '0xCAa7349CEA390F89641fe306D93591f87595dc1F'
+    superfluid_host: '0x3E14dC1b13c488a8d5D310918780c983bD5982E7'
+    uni_usd_price_feed: '0xdf0Fb4e4F928d2dCB76f438575fDD8682386e13C'
+    uniswap_router: '0xE592427A0AEce92De3Edee1F18E0157C05861564'
+    verify: True

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white font-body min-h-screen;
+    background-color: purple;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+  button {
+    @apply rounded-xl px-4 py-2 font-display;
+    @apply active:scale-95 transition-all duration-300  ease-out;
+    @apply active:ring-2;
+    @apply focus-within:outline-none focus-within:ring-1 ring-white;
+    @apply disabled:bg-slate-400 disabled:text-slate-800;
+  }
+  input {
+    @apply focus-within:outline-none;
+    @apply py-2 px-4 rounded-xl font-body text-slate-100;
+    @apply hover:ring-cyan-300;
+    @apply bg-slate-800 focus-visible:bg-slate-900 bg-opacity-50 focus-visible:bg-opacity-50  ring-slate-500 ring-1 focus-visible:ring-cyan-400 transition-all duration-300 ease-out;
+    @apply placeholder-slate-500 active:scale-[98%];
+  }
+  input[type=number]{
+    @apply appearance-none;
+  }
+  
+}
