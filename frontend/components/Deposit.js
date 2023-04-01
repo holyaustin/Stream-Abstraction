@@ -7,7 +7,7 @@ import { THELS_CONTRACT_ADDRESS, UNI_CONTRACT_ADDRESS } from '../constants/contr
 import ABI, { ERC20_ABI } from '../constants/abi';
 
 const TOKEN_LIST = [
-  { name: "🦄UNI", id: 1, value: "UNI", address: UNI_CONTRACT_ADDRESS },
+  { name: "MATIC", id: 1, value: "MATIC", address: UNI_CONTRACT_ADDRESS },
 ]
 
 function Deposit() {

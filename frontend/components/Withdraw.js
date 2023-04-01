@@ -8,7 +8,7 @@ import ABI from '../constants/abi';
 import toast from 'react-hot-toast';
 
 const TOKEN_LIST = [
-  { name: "🦄UNI", id: 1, value: "UNI", address: UNI_CONTRACT_ADDRESS },
+  { name: "MATIC", id: 1, value: "MATIC", address: UNI_CONTRACT_ADDRESS },
 ]
 
 function Withdraw() {
